@@ -30,6 +30,10 @@ PAGES = FIXTURES / "pages"
 REFERENCE_PDF = REPO_ROOT / "data" / "patents" / "WO2024097932A1.pdf"
 PUBNUM = "WO2024097932A1"
 
+requires_reference_pdf = pytest.mark.skipif(
+    not REFERENCE_PDF.is_file(), reason="reference PDF absent"
+)
+
 # A 1x1 PNG, enough to stand in for a patentimages download.
 TINY_PNG = bytes.fromhex(
     "89504e470d0a1a0a0000000d49484452000000010000000108000000003a"
@@ -401,17 +405,20 @@ def test_extract_page_images_falls_back_to_pdftoppm(tmp_path: Path) -> None:
 
 
 @pytest.mark.slow
+@requires_reference_pdf
 def test_reference_pdf_page_count() -> None:
     assert pdfsrc.pdf_page_count(REFERENCE_PDF) == 223  # PRD §3.1
 
 
 @pytest.mark.slow
+@requires_reference_pdf
 def test_reference_pdf_has_no_text_layer() -> None:
     """PRD EC-1 — 223 characters in 223 pages, no embedded fonts."""
     assert pdfsrc.has_text_layer(REFERENCE_PDF) is False
 
 
 @pytest.mark.slow
+@requires_reference_pdf
 def test_extract_page_images_keeps_the_original_ccitt_raster(tmp_path: Path) -> None:
     """PRD R7.4 — pdfimages must hand back the embedded bitmap untouched."""
     pages = pdfsrc.extract_page_images(REFERENCE_PDF, tmp_path, first=63, last=63)
@@ -424,6 +431,7 @@ def test_extract_page_images_keeps_the_original_ccitt_raster(tmp_path: Path) -> 
 
 
 @pytest.mark.slow
+@requires_reference_pdf
 def test_extract_page_images_returns_a_range_in_page_order(tmp_path: Path) -> None:
     pages = pdfsrc.extract_page_images(REFERENCE_PDF, tmp_path, first=61, last=63)
     assert [page.page_no for page in pages] == [61, 62, 63]
@@ -431,6 +439,7 @@ def test_extract_page_images_returns_a_range_in_page_order(tmp_path: Path) -> No
 
 
 @pytest.mark.slow
+@requires_reference_pdf
 def test_extract_publication_number_from_the_reference_pdf(tmp_path: Path) -> None:
     """PRD AC-1.1 end to end: PDF in, publication number out."""
     assert pdfsrc.extract_publication_number(REFERENCE_PDF, tmp_path) == PUBNUM
@@ -564,6 +573,7 @@ def test_resolve_rejects_an_unusable_source_string(tmp_path: Path) -> None:
 
 
 @pytest.mark.slow
+@requires_reference_pdf
 def test_resolve_the_reference_pdf_offline(tmp_path: Path) -> None:
     """PRD AC-1.1 + AC-1.3 together, on the real 223-page PDF, with no network."""
     resolved = res.resolve(REFERENCE_PDF, tmp_path / "bundle", allow_network=False)

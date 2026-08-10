@@ -60,6 +60,7 @@ Corrections live in the browser session only — **export before closing the tab
 | Symptom | Fix |
 |---|---|
 | `pip install -e .` rejects your Python version | Recreate the venv with `python3.11 -m venv .venv` |
+| pip resolves against the wrong Python (e.g. `cp313` wheels, conda paths) | Another environment is shadowing the venv — run `conda deactivate` if your prompt shows `(base)`, then re-run `source .venv/bin/activate` |
 | py2opsin / name parsing fails on macOS | You're on the `/usr/bin/java` stub — apply the PATH fix in Step 1 |
 | `pip install MolScribe` without `--no-deps` won't resolve | Expected; install exactly as in Step 2 |
 | torch pulls gigabytes of `nvidia-*` packages | Install torch only via `requirements.txt` (CPU index) |
