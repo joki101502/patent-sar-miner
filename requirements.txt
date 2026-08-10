@@ -1,0 +1,51 @@
+# Patent SAR Miner — Python 3.11 ONLY (see IMPLEMENTATION_PLAN.md Part 0.2)
+#
+# torch MUST come from the CPU index (PRD R9.8) — the default PyPI torch pulls
+# several GB of nvidia-* CUDA packages that are useless on a CPU host.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+
+# --- MolScribe hard pins (PRD R9.8) — DO NOT RELAX ---
+# albumentations 2.x removed private symbols molscribe/augment.py imports.
+# timm 1.x removed overlay_external_default_cfg that its Swin transformer imports.
+albumentations==1.1.0
+timm==0.4.12
+numpy<2
+
+# --- MolScribe transitive deps not installed under --no-deps ---
+pandas
+SmilesPE
+huggingface_hub
+opencv-python-headless
+OpenNMT-py==2.2.0
+
+# --- Table Transformer second detector (PRD R8.3) + MolClassifier (PRD R8.6) ---
+# REAL PIN, measured: transformers 5.x validates model configs with strict
+# dataclasses and rejects the TATR checkpoint's `dilation: null` with
+# "Field 'dilation' expected bool, got NoneType". No from_pretrained override
+# survives, because the saved config overwrites the kwarg. 4.57.6 loads it.
+# This brings in torch only — no TensorFlow, so PRD R17.7/AC-9.6 still hold.
+transformers<5
+
+# --- chemistry ---
+rdkit
+chembl_structure_pipeline
+py2opsin
+
+# --- app + utilities ---
+streamlit
+pillow
+lxml
+requests
+pint
+pyyaml
+openpyxl
+XlsxWriter
+pydantic
+pytest
+
+# NOTE: MolScribe itself is NOT in this file. Its published pin torch<2.0 is
+# unsatisfiable on today's PyPI, so it must be installed separately:
+#   pip install --no-deps MolScribe
+# (see IMPLEMENTATION_PLAN.md Part 0.2 / PRD R9.8)

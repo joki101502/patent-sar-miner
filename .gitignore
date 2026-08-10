@@ -1,0 +1,60 @@
+# Private planning docs — kept only in the private patent-sar-miner-beta repo.
+PRD.md
+IMPLEMENTATION_PLAN.md
+prd-jam/
+
+# Environment — never commit real values. .env.example is the committed template.
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Model weights — produced at build time by `sarmine slim-checkpoint`
+# (PRD R17.9 / Plan Part 7.1). The slim checkpoint is ~384 MB; too large for git.
+# If deploying to Streamlit Community Cloud, either bake it in the build step or
+# use git-lfs deliberately — do NOT commit it casually.
+models/
+*.pth
+*.ckpt
+
+# HuggingFace cache
+.cache/
+
+# Pipeline output — artifact bundles are reproducible from source (PRD §15.5).
+# The gold sets in gold/ ARE committed (PRD §20.1) — do not ignore those.
+# Anchored to the repo root: an unanchored `artifacts/` also swallows the
+# SOURCE package sarmine/artifacts/, which broke the Streamlit Cloud deploy.
+/artifacts/
+
+# Scratch — spike and debug output, never part of the deliverable.
+# Raw patents.google.com dumps in particular: every page inlines Google's own
+# public Help-widget API key, which trips secret scanning even though it is
+# neither ours nor secret. Committed HTML fixtures must be put through
+# tools/sanitize_html_fixtures.py first.
+*.log
+tmp/
+scratch/
+scratch_*/
+scratch_*.html
+.work/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Large local inputs (the reference patent PDF is user-supplied, 7.4 MB)
+data/patents/
+
+# Intermediate glyph-isolation crops written beside the image being OCRd
+_numcell_*.png

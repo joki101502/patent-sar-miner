@@ -1,0 +1,17 @@
+[server]
+# PRD §14.1 — the reference patent is a 7.4 MB PDF; allow comfortable headroom.
+maxUploadSize = 50
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[runner]
+# PRD R9.10 — MolScribe's DataLoader re-executes the entry script. Script
+# re-runs while a model is resident are exactly the condition that caused the
+# observed ~17x fork storm, so magic rerun behaviour stays off.
+fastReruns = false
+
+[theme]
+base = "light"
+primaryColor = "#1f6feb"

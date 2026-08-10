@@ -1,0 +1,721 @@
+{
+  "pubnum": "WO2024097932A1",
+  "title": "COMPOUNDS AND THEIR USE FOR TREATMENT OF HEMOGLOBINOPATHIES",
+  "gold_version": "1.0",
+  "provenance": {
+    "activity": "Transcribed verbatim from PRD Appendix B.1 (hand-read from imgf000186_0001.png rows 1-31 and imgf000187_0001.png rows 32-54).",
+    "legends": "PRD R10.7. Where the patent's definitional and summary sentences contradict, the definitional sentence is authoritative (PRD R10.6).",
+    "compounds": "Only compound 5 is hand-checked (PRD Appendix B.2, agreed by both channels). Other Table 1 structures are NOT in this gold set.",
+    "examples": "OPSIN over the machine-readable description names after l->1 homoglyph repair; every structure RDKit-valid. NOT hand-drawn."
+  },
+  "assays": [
+    {
+      "name": "HbF Induction (%)",
+      "target": "HbF",
+      "kind": "letter_bin",
+      "role": "phenotypic"
+    },
+    {
+      "name": "WIZ EC50 (uM)",
+      "target": "WIZ",
+      "kind": "letter_bin",
+      "role": "target"
+    },
+    {
+      "name": "ZBTB7A EC50 (uM)",
+      "target": "ZBTB7A",
+      "kind": "letter_bin",
+      "role": "off_target"
+    }
+  ],
+  "cell_line": "HUDEP-2",
+  "legends": {
+    "HbF Induction (%)": [
+      {
+        "label": "A",
+        "lower": 66.0,
+        "upper": 100.0,
+        "units": "%",
+        "score": 3
+      },
+      {
+        "label": "B",
+        "lower": 33.0,
+        "upper": 66.0,
+        "units": "%",
+        "score": 2
+      },
+      {
+        "label": "C",
+        "lower": null,
+        "upper": 33.0,
+        "units": "%",
+        "score": 1
+      }
+    ],
+    "WIZ EC50 (uM)": [
+      {
+        "label": "D",
+        "lower_nM": null,
+        "upper_nM": 10.0,
+        "units": "nM",
+        "score": 3
+      },
+      {
+        "label": "E",
+        "lower_nM": 10.0,
+        "upper_nM": 100.0,
+        "units": "nM",
+        "score": 2
+      },
+      {
+        "label": "F",
+        "lower_nM": 100.0,
+        "upper_nM": null,
+        "units": "nM",
+        "score": 1
+      }
+    ],
+    "ZBTB7A EC50 (uM)": [
+      {
+        "label": "G",
+        "lower_nM": null,
+        "upper_nM": 30.0,
+        "units": "nM",
+        "score": 3
+      },
+      {
+        "label": "H",
+        "lower_nM": 30.0,
+        "upper_nM": 100.0,
+        "units": "nM",
+        "score": 2
+      },
+      {
+        "label": "I",
+        "lower_nM": 100.0,
+        "upper_nM": null,
+        "units": "nM",
+        "score": 1
+      }
+    ]
+  },
+  "legend_contradictions": [
+    {
+      "assay": "HbF Induction (%)",
+      "bin": "A",
+      "definitional": "between 66% and 100%",
+      "summary": "between 67% and 100%",
+      "resolution": "definitional"
+    },
+    {
+      "assay": "WIZ EC50 (uM)",
+      "bin": "F",
+      "definitional": "> 0.1 uM",
+      "summary": "< .01 uM",
+      "resolution": "definitional"
+    },
+    {
+      "assay": "ZBTB7A EC50 (uM)",
+      "bin": "G",
+      "definitional": "< 0.03 uM",
+      "summary": "< .01 M",
+      "resolution": "definitional"
+    }
+  ],
+  "cross_reference_errors": [
+    {
+      "paragraph": "[00508]",
+      "says": "Table 1",
+      "means": "Table 2",
+      "detail": "The HbF/viability results described as being 'in Table 1 below' are in Table 2."
+    }
+  ],
+  "activity": {
+    "1": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "2": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "3": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "4": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "5": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "6": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "7": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "8": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "9": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "10": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "11": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "12": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "13": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "14": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "15": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "16": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "17": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "18": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "19": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "20": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "21": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "22": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "23": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "24": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "25": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "26": {
+      "HbF Induction (%)": "C",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "27": {
+      "HbF Induction (%)": "C",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "28": {
+      "HbF Induction (%)": "C",
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "29": {
+      "HbF Induction (%)": "C",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "30": {
+      "HbF Induction (%)": "C",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "31": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "32": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "33": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "34": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "35": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "36": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "37": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "38": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "39": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "40": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "41": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "42": {
+      "HbF Induction (%)": "B",
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "43": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "44": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "45": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "46": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "47": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "48": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "49": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "50": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "G"
+    },
+    "51": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "E",
+      "ZBTB7A EC50 (uM)": "H"
+    },
+    "52": {
+      "HbF Induction (%)": "A",
+      "WIZ EC50 (uM)": "D",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "53": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "I"
+    },
+    "54": {
+      "HbF Induction (%)": null,
+      "WIZ EC50 (uM)": "F",
+      "ZBTB7A EC50 (uM)": "I"
+    }
+  },
+  "compounds": {
+    "5": {
+      "name": "2-(2,6-dioxopiperidin-3-yl)-4-((5-(3-fluoro-4-methoxyphenyl)-1-methyl-1H-benzo[d]imidazol-6-yl)amino)isoindoline-1,3-dione",
+      "inchikey": "WZPDSZGYLXZFEK-UHFFFAOYSA-N",
+      "smiles_opsin": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C(=CC2=C(N(C=N2)C)C1)C1=CC(=C(C=C1)OC)F)=O)=O",
+      "smiles_molscribe": "COc1ccc(-c2cc3ncn(C)c3cc2Nc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)cc1F",
+      "page_no": 63,
+      "example": "14",
+      "verification": "hand_checked"
+    }
+  },
+  "examples": {
+    "1": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((l-methyl-6-phenoxy-lH-indazol-5yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((1-methyl-6-phenoxy-1H-indazol-5yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1OC1=CC=CC=C1)C)=O)=O",
+      "inchikey": "NHRYNLOVXWXDDO-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "2": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((6-(4-fluorophenoxy)-l-methyl-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((6-(4-fluorophenoxy)-1-methyl-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1OC1=CC=C(C=C1)F)C)=O)=O",
+      "inchikey": "BBVCFNJSEMADIA-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "3": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((6-methoxy-4-phenylpyridin-3-yl)amino)isoindoline-1,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((6-methoxy-4-phenylpyridin-3-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=NC(=CC1C1=CC=CC=C1)OC)=O)=O",
+      "inchikey": "OIPIUOJUSGKCQR-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "4": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((6-methyl-4-phenoxypyridin-3-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((6-methyl-4-phenoxypyridin-3-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=NC(=CC1OC1=CC=CC=C1)C)=O)=O",
+      "inchikey": "OEEGZVBYQPYBEP-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "5": {
+      "name_as_published": "4-((6-(2-(dimethylamino)ethoxy)-4-phenoxypyridin-3-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "4-((6-(2-(dimethylamino)ethoxy)-4-phenoxypyridin-3-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "CN(CCOC1=CC(=C(C=N1)NC1=C2C(N(C(C2=CC=C1)=O)C1C(NC(CC1)=O)=O)=O)OC1=CC=CC=C1)C",
+      "inchikey": "JKBDSXKVJRBXET-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "6": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((6-(3-fluorophenoxy)-l-(tetrahydro-2H-pyran-4-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((6-(3-fluorophenoxy)-1-(tetrahydro-2H-pyran-4-yl)-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1OC1=CC(=CC=C1)F)C1CCOCC1)=O)=O",
+      "inchikey": "MHECLZVPWCJHPF-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "7": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((l-methyl-6-(2-methylpyridin-4-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((1-methyl-6-(2-methylpyridin-4-yl)-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1C1=CC(=NC=C1)C)C)=O)=O",
+      "inchikey": "SSPZXZYFQKLOJR-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "8": {
+      "name_as_published": "4-((5-(2-chlorophenoxy)-l-(tetrahydro-2H-pyran-4-yl)-lH-indazol-4-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "4-((5-(2-chlorophenoxy)-1-(tetrahydro-2H-pyran-4-yl)-1H-indazol-4-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "ClC1=C(OC=2C(=C3C=NN(C3=CC2)C2CCOCC2)NC2=C3C(N(C(C3=CC=C2)=O)C2C(NC(CC2)=O)=O)=O)C=CC=C1",
+      "inchikey": "ZMEVDZWDXVQGHT-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "9": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((6-(3-fluoro-4-methoxyphenyl)-l-methyl-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((6-(3-fluoro-4-methoxyphenyl)-1-methyl-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1C1=CC(=C(C=C1)OC)F)C)=O)=O",
+      "inchikey": "JKSXFSKDAZCTRR-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "10": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((5-(2-fluoro-6-methylphenoxy)-l-methyl-lH-indazol-4-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((5-(2-fluoro-6-methylphenoxy)-1-methyl-1H-indazol-4-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC1=C2C=NN(C2=CC=C1OC1=C(C=CC=C1C)F)C)=O)=O",
+      "inchikey": "RZOWKEWOOLNSRT-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "11": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((4-methyl-l-(tetrahydro-2H-pyran-4-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((4-methyl-1-(tetrahydro-2H-pyran-4-yl)-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C(=C2C=NN(C2=CC1)C1CCOCC1)C)=O)=O",
+      "inchikey": "GHDKYCBBVDZHOT-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "12": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((6-methoxy-l-(tetrahydro-2H-pyran-4-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((6-methoxy-1-(tetrahydro-2H-pyran-4-yl)-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1OC)C1CCOCC1)=O)=O",
+      "inchikey": "DBSACWOVBWXHHZ-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "13": {
+      "name_as_published": "2-(2,6-dioxo-3-piperidyl)-4-[[l-methyl-5-(2-methyl-4-pyridyl)indazol-6-yl]amino]isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxo-3-piperidyl)-4-[[1-methyl-5-(2-methyl-4-pyridyl)indazol-6-yl]amino]isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC1=C(C=C2C=NN(C2=C1)C)C1=CC(=NC=C1)C)=O)=O",
+      "inchikey": "DOSAHDCAHLISQN-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "14": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((5-(3-fluoro-4-methoxyphenyl)-l-methyl-lH-benzo[d]imidazol-6-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((5-(3-fluoro-4-methoxyphenyl)-1-methyl-1H-benzo[d]imidazol-6-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C(=CC2=C(N(C=N2)C)C1)C1=CC(=C(C=C1)OC)F)=O)=O",
+      "inchikey": "WZPDSZGYLXZFEK-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "15": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((6-(2-methylpyridin-4-yl)-l-(tetrahydro-2H-pyran-4-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((6-(2-methylpyridin-4-yl)-1-(tetrahydro-2H-pyran-4-yl)-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1C1=CC(=NC=C1)C)C1CCOCC1)=O)=O",
+      "inchikey": "HUHGXKSSWWETEN-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "16": {
+      "name_as_published": "4-((l-cyclopropyl-5-(2-methylpyridin-4-yl)-lH-benzo[d]imidazol-6-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "4-((1-cyclopropyl-5-(2-methylpyridin-4-yl)-1H-benzo[d]imidazol-6-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "C1(CC1)N1C=NC2=C1C=C(C(=C2)C2=CC(=NC=C2)C)NC2=C1C(N(C(C1=CC=C2)=O)C2C(NC(CC2)=O)=O)=O",
+      "inchikey": "DDGVXRBTQFAOJP-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "17": {
+      "name_as_published": "2-(2,6-dioxo-3-piperidyl)-4-[[3-methyl-6-(2-methyl-4-pyridyl)-l,2-benzoxazol-5-yl]amino]isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxo-3-piperidyl)-4-[[3-methyl-6-(2-methyl-4-pyridyl)-1,2-benzoxazol-5-yl]amino]isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC=1C(=CC2=C(C(=NO2)C)C1)C1=CC(=NC=C1)C)=O)=O",
+      "inchikey": "GAYWGFGQGDNVRA-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "18": {
+      "name_as_published": "4-((l,2-dimethyl-5-(2-methylpyridin-4-yl)-lH-benzo[d]imidazol-6-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "4-((1,2-dimethyl-5-(2-methylpyridin-4-yl)-1H-benzo[d]imidazol-6-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "CN1C(=NC2=C1C=C(C(=C2)C2=CC(=NC=C2)C)NC2=C1C(N(C(C1=CC=C2)=O)C2C(NC(CC2)=O)=O)=O)C",
+      "inchikey": "NZPODSNLVGFYRJ-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "19": {
+      "name_as_published": "4-((6-cyclopropyl-l-(tetrahydro-2H-pyran-4-yl)-lH-indazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "4-((6-cyclopropyl-1-(tetrahydro-2H-pyran-4-yl)-1H-indazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "C1(CC1)C1=C(C=C2C=NN(C2=C1)C1CCOCC1)NC1=C2C(N(C(C2=CC=C1)=O)C1C(NC(CC1)=O)=O)=O",
+      "inchikey": "LQCZDIVUTFODFS-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "20": {
+      "name_as_published": "4-((l,3-dimethyl-6-(2-methylpyridin-4-yl)-lH-indazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "4-((1,3-dimethyl-6-(2-methylpyridin-4-yl)-1H-indazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "CN1N=C(C2=CC(=C(C=C12)C1=CC(=NC=C1)C)NC1=C2C(N(C(C2=CC=C1)=O)C1C(NC(CC1)=O)=O)=O)C",
+      "inchikey": "UPTCOYFDUAPRPK-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "21": {
+      "name_as_published": "4-((6-(2-(difluoromethyl)pyridin-4-yl)-l-(tetrahydro-2H-pyran-4-yl)-lH-indazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "4-((6-(2-(difluoromethyl)pyridin-4-yl)-1-(tetrahydro-2H-pyran-4-yl)-1H-indazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "FC(C1=NC=CC(=C1)C1=C(C=C2C=NN(C2=C1)C1CCOCC1)NC1=C2C(N(C(C2=CC=C1)=O)C1C(NC(CC1)=O)=O)=O)F",
+      "inchikey": "CLUCHVCNBAPVJE-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "22": {
+      "name_as_published": "4-((3-(dimethylamino)-2,3-dihydro-lH-inden-5-yl)amino)-2-((S)-3-methyl-2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "4-((3-(dimethylamino)-2,3-dihydro-1H-inden-5-yl)amino)-2-((S)-3-methyl-2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "CN(C1CCC2=CC=C(C=C12)NC1=C2C(N(C(C2=CC=C1)=O)[C@@]1(C(NC(CC1)=O)=O)C)=O)C",
+      "inchikey": "RGMRTFYSLUCXFJ-BIAFCPFJSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "23": {
+      "name_as_published": "(S)-2-(2,6-dioxopiperidin-3-yl)-4-((l-methyl-6-(2-methylpyridin-4-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione&(l?)-2-(2,6-dioxopiperidin-3-yl)-4-((l-methyl-6-(2-methylpyridin-4-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "(S)-2-(2,6-dioxopiperidin-3-yl)-4-((1-methyl-6-(2-methylpyridin-4-yl)-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": true,
+      "smiles": "O=C1NC(CC[C@@H]1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1C1=CC(=NC=C1)C)C)=O)=O",
+      "inchikey": "SSPZXZYFQKLOJR-NRFANRHFSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "24": {
+      "name_as_published": "(7?)-4-((l,3-dimethyl-6-(2-methylpyridin-4-yl)-2-oxo-2,3-dihydro-lH-benzo[d]imidazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione&(5)-4-((l,3-dimethyl-6-(2-methylpyridin-4-yl)-2-oxo-2,3-dihydro-lH-benzo[d]imidazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "(R)-4-((1,3-dimethyl-6-(2-methylpyridin-4-yl)-2-oxo-2,3-dihydro-1H-benzo[d]imidazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": true,
+      "smiles": "CN1C(N(C2=C1C=C(C(=C2)NC2=C1C(N(C(C1=CC=C2)=O)[C@H]2C(NC(CC2)=O)=O)=O)C2=CC(=NC=C2)C)C)=O",
+      "inchikey": "GKLLIYQCCDBVGF-HXUWFJFHSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "25": {
+      "name_as_published": "(R)-4-((6-(2,6-dimethylpyridin-4-yl)-l,3-dimethyl-2-oxo-2,3-dihydro-lH-benzo[d]imidazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione&(S)-4-((6-(2,6-dimethylpyridin-4-yl)-l,3-dimethyl-2-oxo-2,3-dihydro-lH-benzo[d]imidazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "(R)-4-((6-(2,6-dimethylpyridin-4-yl)-1,3-dimethyl-2-oxo-2,3-dihydro-1H-benzo[d]imidazol-5-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": true,
+      "smiles": "CC1=NC(=CC(=C1)C=1C(=CC2=C(N(C(N2C)=O)C)C1)NC1=C2C(N(C(C2=CC=C1)=O)[C@H]1C(NC(CC1)=O)=O)=O)C",
+      "inchikey": "NXVJPXJYZQRLCJ-OAQYLSRUSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "26": {
+      "name_as_published": "2-((R)-2,6-dioxopiperidin-3-yl)-4-((6-(2-methylpyridin-4-yl)-l-((R)-tetrahydrofuran-3-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione&2-((S)-2,6-dioxopiperidin-3-yl)-4-((6-(2-methylpyridin-4-yl)-l-((R)-tetrahydrofuran-3-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-((R)-2,6-dioxopiperidin-3-yl)-4-((6-(2-methylpyridin-4-yl)-1-((R)-tetrahydrofuran-3-yl)-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": true,
+      "smiles": "O=C1NC(CC[C@H]1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1C1=CC(=NC=C1)C)[C@H]1COCC1)=O)=O",
+      "inchikey": "LCCIAOAKWRUYFH-NTKDMRAZSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "27": {
+      "name_as_published": "(S)-2-(2,6-dioxopiperidin-3-yl)-4-((l-methyl-6-(2-methylpyridin-4-yl)-2-oxo-l,2,3,4-tetrahydroquinolin-7-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "(S)-2-(2,6-dioxopiperidin-3-yl)-4-((1-methyl-6-(2-methylpyridin-4-yl)-2-oxo-1,2,3,4-tetrahydroquinolin-7-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CC[C@@H]1N1C(C2=CC=CC(=C2C1=O)NC1=C(C=C2CCC(N(C2=C1)C)=O)C1=CC(=NC=C1)C)=O)=O",
+      "inchikey": "WTHBTFQJBVJOAO-QFIPXVFZSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "28": {
+      "name_as_published": "2-(2,6-dioxopiperidin-3-yl)-4-((l-methyl-6-(4-methylthiazol-2-yl)-2-oxo-l,2,3,4-tetrahydroquinolin-7-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "2-(2,6-dioxopiperidin-3-yl)-4-((1-methyl-6-(4-methylthiazol-2-yl)-2-oxo-1,2,3,4-tetrahydroquinolin-7-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CCC1N1C(C2=CC=CC(=C2C1=O)NC1=C(C=C2CCC(N(C2=C1)C)=O)C=1SC=C(N1)C)=O)=O",
+      "inchikey": "XWGYWYZJOPTBHP-UHFFFAOYSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "29": {
+      "name_as_published": "(S)-4-((6-(l-cyclopropyl-lH-pyrazol-4-yl)-l-methyl-2-oxo-1,2,3,4-tetrahydroquinolin-7-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "(S)-4-((6-(1-cyclopropyl-1H-pyrazol-4-yl)-1-methyl-2-oxo-1,2,3,4-tetrahydroquinolin-7-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "C1(CC1)N1N=CC(=C1)C=1C=C2CCC(N(C2=CC1NC1=C2C(N(C(C2=CC=C1)=O)[C@@H]1C(NC(CC1)=O)=O)=O)C)=O",
+      "inchikey": "IDALOGQZDJPGDQ-QFIPXVFZSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "30": {
+      "name_as_published": "(S)-4-((6-(l,3-dimethyl-lH-pyrazol-4-yl)-l-methyl-2-oxo-1,2,3,4-tetrahydroquinolin-7-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "(S)-4-((6-(1,3-dimethyl-1H-pyrazol-4-yl)-1-methyl-2-oxo-1,2,3,4-tetrahydroquinolin-7-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "CN1N=C(C(=C1)C=1C=C2CCC(N(C2=CC1NC1=C2C(N(C(C2=CC=C1)=O)[C@@H]1C(NC(CC1)=O)=O)=O)C)=O)C",
+      "inchikey": "WWCJLGYHNVVEBB-NRFANRHFSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "31": {
+      "name_as_published": "(S)-4-((6-(l,5-dimethyl-6-oxo-l,6-dihydropyridin-3-yl)-l-methyl-2-oxo-l,2,3,4-tetrahydroquinolin-7-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-l,3-dione",
+      "name_repaired": "(S)-4-((6-(1,5-dimethyl-6-oxo-1,6-dihydropyridin-3-yl)-1-methyl-2-oxo-1,2,3,4-tetrahydroquinolin-7-yl)amino)-2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "CN1C=C(C=C(C1=O)C)C=1C=C2CCC(N(C2=CC1NC1=C2C(N(C(C2=CC=C1)=O)[C@@H]1C(NC(CC1)=O)=O)=O)C)=O",
+      "inchikey": "IPWNGXFWEMLZBT-QFIPXVFZSA-N",
+      "verification": "opsin_on_description_text"
+    },
+    "32": {
+      "name_as_published": "(S)-2-(2,6-dioxopiperidin-3-yl)-4-((l-methyl-6-(2-methylpyridin-4-yl)-lH-indazol-5-yl)amino)isoindoline-l,3-dione",
+      "name_repaired": "(S)-2-(2,6-dioxopiperidin-3-yl)-4-((1-methyl-6-(2-methylpyridin-4-yl)-1H-indazol-5-yl)amino)isoindoline-1,3-dione",
+      "is_enantiomer_pair": false,
+      "smiles": "O=C1NC(CC[C@@H]1N1C(C2=CC=CC(=C2C1=O)NC=1C=C2C=NN(C2=CC1C1=CC(=NC=C1)C)C)=O)=O",
+      "inchikey": "SSPZXZYFQKLOJR-NRFANRHFSA-N",
+      "verification": "opsin_on_description_text"
+    }
+  },
+  "compound_to_example": {
+    "5": "14"
+  },
+  "counts": {
+    "n_compounds": 54,
+    "n_activity_cells": 162,
+    "n_examples": 32,
+    "blank_hbf_compounds": [
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "49",
+      "50",
+      "51",
+      "53",
+      "54"
+    ],
+    "letter_distribution": {
+      "HbF Induction (%)": {
+        "A": 29,
+        "B": 9,
+        "C": 5,
+        "blank": 11
+      },
+      "WIZ EC50 (uM)": {
+        "D": 21,
+        "E": 24,
+        "F": 9
+      },
+      "ZBTB7A EC50 (uM)": {
+        "G": 16,
+        "H": 20,
+        "I": 18
+      }
+    },
+    "max_selectivity_compounds": [
+      "10",
+      "16",
+      "20",
+      "52"
+    ],
+    "has_in_vivo_data": false
+  }
+}

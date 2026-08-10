@@ -1,0 +1,5 @@
+tesseract-ocr
+tesseract-ocr-eng
+default-jre
+poppler-utils
+libgl1

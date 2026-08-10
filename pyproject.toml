@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sarmine"
+version = "1.0.0"
+description = "Patent SAR Miner — one chemistry patent to a joined, provenance-carrying SAR table"
+requires-python = "==3.11.*"
+readme = "README.md"
+
+[project.scripts]
+sarmine = "sarmine.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sarmine*"]
+
+[tool.setuptools.package-data]
+sarmine = ["data/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning",
+]
+markers = [
+    "slow: needs models or the full reference PDF",
+    "network: needs live network access",
+]

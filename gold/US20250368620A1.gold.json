@@ -1,0 +1,571 @@
+{
+  "pubnum": "US20250368620A1",
+  "title": "ARNT Degrading Compounds and Uses Thereof",
+  "gold_version": "1.0",
+  "role": "generality fixture — real HTML tables, numeric values, explicit units (PRD §3.8). Structurally opposite to WO2024097932A1.",
+  "provenance": {
+    "tables": "Parsed directly from the real <table> elements in the Google Patents description (no OCR involved).",
+    "structures": "OPSIN over the HTML table names after de-hyphenating the line-wrapped tokens; every structure RDKit-valid."
+  },
+  "assays": [
+    {
+      "name": "HiBiT DC50 (nM)",
+      "target": "ARNT",
+      "kind": "numeric",
+      "standard_type": "DC50",
+      "units": "nM",
+      "role": "target"
+    }
+  ],
+  "split_header": {
+    "physical_rows": [
+      [
+        "",
+        "",
+        "Iso-",
+        "Coupl-",
+        ""
+      ],
+      [
+        "",
+        "",
+        "indoline",
+        "ing",
+        "HiBiT"
+      ],
+      [
+        "Cmpd.",
+        "",
+        "syn-",
+        "proce-",
+        "DC50"
+      ],
+      [
+        "No.",
+        "Compound Structure",
+        "thesis",
+        "dure",
+        "(nM)"
+      ]
+    ],
+    "expected_reconstruction": [
+      "Cmpd. No.",
+      "Compound Structure",
+      "Isoindoline synthesis",
+      "Coupling procedure",
+      "HiBiT DC50 (nM)"
+    ],
+    "note": "PRD R10.10 / EC-27 — join adjacent header rows, then de-hyphenate."
+  },
+  "compounds": {
+    "1": {
+      "name_as_published": "(S)-3-((R)-5-((R)-1- ((dimethylamino)methyl)isoin- doline-2-carbonyl)-3-methyl- 1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-1((dimethylamino)methyl)isoindoline-2-carbonyl)-3-methyl1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "CN(C)C[C@@H]1N(CC2=CC=CC=C12)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "CKHBJUDXZFTHHF-YDFBLROQSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "2": {
+      "name_as_published": "(S)-3-((R)-5-((R)-5-chloro-1- ((dimethylamino)methyl)-4- fluoroisoindoline-2-carbonyl)- 3-methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-5-chloro-1((dimethylamino)methyl)-4fluoroisoindoline-2-carbonyl)3-methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "ClC=1C(=C2CN([C@H](C2=CC1)CN(C)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)F",
+      "inchikey": "PRKYMYWVIWBKGC-UBWHGVKJSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "3": {
+      "name_as_published": "(S)-3-((R)-5-((R)-4-bromo-1- ((dimethylamino)methyl)isoin- doline-2-carbonyl)-3-methyl- 1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-4-bromo-1((dimethylamino)methyl)isoindoline-2-carbonyl)-3-methyl1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "BrC1=C2CN([C@H](C2=CC=C1)CN(C)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "HRNVFNFTQYPPNO-GBSMKCJWSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "4": {
+      "name_as_published": "(S)-3-((R)-5-((R)-5-chloro-4- fluoro-1-(pyrrolidin-1- ylmethyl)isoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-5-chloro-4fluoro-1-(pyrrolidin-1ylmethyl)isoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "ClC=1C(=C2CN([C@H](C2=CC1)CN1CCCC1)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)F",
+      "inchikey": "RPMFHSLDXZCUPJ-QABPDZFRSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "5": {
+      "name_as_published": "3-(5-((S)-5-chloro-4-fluoro-1- methylisoindoline-2-carbonyl)- 2-oxobenzo[cd]indol-1(2H)- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "3-(5-((S)-5-chloro-4-fluoro-1methylisoindoline-2-carbonyl)2-oxobenzo[cd]indol-1(2H)yl)piperidine-2,6-dione",
+      "smiles": "ClC=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C=CC=2C(N(C3=CC=CC1C23)C2C(NC(CC2)=O)=O)=O)F",
+      "inchikey": "MDKZQCFAJPSOAN-SVZXGPMESA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "6": {
+      "name_as_published": "(S)-3-((R)-5-((R)-5-chloro-4- fluoro-1-(piperidin-1- ylmethyl)isoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-5-chloro-4fluoro-1-(piperidin-1ylmethyl)isoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "ClC=1C(=C2CN([C@H](C2=CC1)CN1CCCCC1)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)F",
+      "inchikey": "UEMVAQUTSDEGFT-XRJVTAMDSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "7": {
+      "name_as_published": "(S)-3-((R)-5-((R)-1-((2- azabicyclo[2.1.1]hexan-2- yl)methyl)-5-chloro-4- fluoroisoindoline-2-carbonyl)- 3-methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-1-((2azabicyclo[2.1.1]hexan-2yl)methyl)-5-chloro-4fluoroisoindoline-2-carbonyl)3-methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "C12N(CC(C1)C2)C[C@@H]2N(CC1=C(C(=CC=C21)Cl)F)C(=O)C=2C=C1[C@H](N(C(C1=CC2)=O)[C@@H]2C(NC(CC2)=O)=O)C",
+      "inchikey": "KQXCNHSETORSQO-UJDSIIHKSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "8": {
+      "name_as_published": "(S)-3-((R)-5-((R)-1- ((dimethylamino)methyl)-5- (trifluoromethyl)isoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-1((dimethylamino)methyl)-5(trifluoromethyl)isoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "CN(C)C[C@@H]1N(CC2=CC(=CC=C12)C(F)(F)F)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "ARBNFZUFIKGTDB-GBSMKCJWSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "9": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5-bromo-1- methylisoindoline-2-carbonyl)- 3-methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5-bromo-1methylisoindoline-2-carbonyl)3-methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "BrC=1C=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "UXOXUKYLUGFSRN-RDXCRGQUSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "10": {
+      "name_as_published": "(3S)-3-((3R)-5-((1R)-1-((2- azabicyclo[2.2.1]heptan-2- yl)methyl)-5-chloro-4- fluoroisoindoline-2-carbonyl)- 3-methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(3S)-3-((3R)-5-((1R)-1-((2azabicyclo[2.2.1]heptan-2yl)methyl)-5-chloro-4fluoroisoindoline-2-carbonyl)3-methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "C12N(CC(CC1)C2)C[C@@H]2N(CC1=C(C(=CC=C21)Cl)F)C(=O)C=2C=C1[C@H](N(C(C1=CC2)=O)[C@@H]2C(NC(CC2)=O)=O)C",
+      "inchikey": "HRKABKUIPSEHNN-RHBVKUDKSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "11": {
+      "name_as_published": "(S)-3-((R)-5-((R)-1- ((dimethylamino)methyl)-4- methoxyisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-1((dimethylamino)methyl)-4methoxyisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "CN(C)C[C@@H]1N(CC2=C(C=CC=C12)OC)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "AFSIMVYJFYVBAF-YDFBLROQSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "12": {
+      "name_as_published": "(S)-3-((R)-5-((R)-5-chloro-4- fluoro-1-((4-fluoropiperidin-1- yl)methyl)isoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-5-chloro-4fluoro-1-((4-fluoropiperidin-1yl)methyl)isoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "ClC=1C(=C2CN([C@H](C2=CC1)CN1CCC(CC1)F)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)F",
+      "inchikey": "PMIIMPBIHIDTIW-BDJFWFNGSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "13": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5-fluoro-1- methylisoindoline-2-carbonyl)- 3-methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5-fluoro-1methylisoindoline-2-carbonyl)3-methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "FC=1C=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "UXAUONJUTBMZEP-RDXCRGQUSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "14": {
+      "name_as_published": "(S)-3-((R)-5-((R)-4-bromo-1- ((dimethylamino)methyl)-5- methoxyisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-4-bromo-1((dimethylamino)methyl)-5methoxyisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "BrC1=C2CN([C@H](C2=CC=C1OC)CN(C)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "LIPSXDVBGOANGL-OREJSRFESA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "15": {
+      "name_as_published": "(S)-3-((R)-5-((R)-5-chloro-1- ((3,3-difluoroazetidin-1- yl)methyl)-4- fluoroisoindoline-2-carbonyl)- 3-methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-5-chloro-1((3,3-difluoroazetidin-1yl)methyl)-4fluoroisoindoline-2-carbonyl)3-methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "ClC=1C(=C2CN([C@H](C2=CC1)CN1CC(C1)(F)F)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)F",
+      "inchikey": "CWFZWEHHZFFYLU-UBWHGVKJSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "16": {
+      "name_as_published": "3-(5-((S)-1-methyl-5- (trifluoromethyl)isoindoline-2- carbonyl)-2- oxobenzo[cd]indol-1(2H)- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "3-(5-((S)-1-methyl-5(trifluoromethyl)isoindoline-2carbonyl)-2oxobenzo[cd]indol-1(2H)yl)piperidine-2,6-dione",
+      "smiles": "C[C@@H]1N(CC2=CC(=CC=C12)C(F)(F)F)C(=O)C=1C=CC=2C(N(C3=CC=CC1C23)C2C(NC(CC2)=O)=O)=O",
+      "inchikey": "SCYUKUQVDKGVOT-JRTLGTJJSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "17": {
+      "name_as_published": "(S)-3-((R)-5-((R)-1-(azetidin- 1-ylmethyl)-5-chloro-4- fluoroisoindoline-2-carbonyl)- 3-methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-1-(azetidin1-ylmethyl)-5-chloro-4fluoroisoindoline-2-carbonyl)3-methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "N1(CCC1)C[C@@H]1N(CC2=C(C(=CC=C12)Cl)F)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "DXCITEDZRFCZQY-GBSMKCJWSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "18": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5- cyclopropyl-1,4- dimethylisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5cyclopropyl-1,4dimethylisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "C1(CC1)C=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)C",
+      "inchikey": "FFOMJRDSIHYVFX-DXMSMQRWSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "19": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5-bromo-4- fluoro-1-methylisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5-bromo-4fluoro-1-methylisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "BrC=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)F",
+      "inchikey": "IXEVUSJQMKKDJA-CRTZDJKQSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "20": {
+      "name_as_published": "(S)-3-((R)-5-fluoro-1-methyl- 6-((S)-1-methyl-5- (trifluoromethyl)isoindoline-2- carbonyl)-3-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-fluoro-1-methyl6-((S)-1-methyl-5(trifluoromethyl)isoindoline-2carbonyl)-3-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "FC=1C=C2C(N([C@@H](C2=CC1C(=O)N1[C@H](C2=CC=C(C=C2C1)C(F)(F)F)C)C)[C@@H]1C(NC(CC1)=O)=O)=O",
+      "inchikey": "RZQIIFATKQOLTN-ZBUHCNDUSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "21": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5,6-difluoro- 1-methylisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5,6-difluoro1-methylisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "FC=1C=C2CN([C@H](C2=CC1F)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "RKDWLXDEIXQNBI-ZBUHCNDUSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "22": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5-bromo-4- methoxy-1-methylisoindoline- 2-carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5-bromo-4methoxy-1-methylisoindoline2-carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "BrC=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)OC",
+      "inchikey": "NRMDRKHBWFTPKQ-RDXCRGQUSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "23": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5-ethoxy-1,4- dimethylisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5-ethoxy-1,4dimethylisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "C(C)OC=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)C",
+      "inchikey": "SLZOOKAQJXBNFQ-DMPWYTOCSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "24": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5-bromo-4- chloro-1-methylisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5-bromo-4chloro-1-methylisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "BrC=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)Cl",
+      "inchikey": "JRQZLWAJXVFOKZ-CRTZDJKQSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "25": {
+      "name_as_published": "(S)-3-((R)-5-fluoro-6-((S)-4- fluoro-1,5- dimethylisoindoline-2- carbonyl)-1-methyl-3- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-fluoro-6-((S)-4fluoro-1,5dimethylisoindoline-2carbonyl)-1-methyl-3oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "FC=1C=C2C(N([C@@H](C2=CC1C(=O)N1[C@H](C2=CC=C(C(=C2C1)F)C)C)C)[C@@H]1C(NC(CC1)=O)=O)=O",
+      "inchikey": "PTGMVKRINQUXTI-RDXCRGQUSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "26": {
+      "name_as_published": "(S)-3-((R)-5-((S)-4-fluoro-1,5- dimethylisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-4-fluoro-1,5dimethylisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "FC1=C2CN([C@H](C2=CC=C1C)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "RAHJRUQUACZCDO-MNVSYLFESA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "27": {
+      "name_as_published": "(S)-3-((R)-5-((S)-6-fluoro-1- methylisoindoline-2-carbonyl)- 3-methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-6-fluoro-1methylisoindoline-2-carbonyl)3-methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "FC1=CC=C2CN([C@H](C2=C1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "VRMHPZBEABHBCK-RDXCRGQUSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "28": {
+      "name_as_published": "(S)-3-((R)-5-((R)-1- ((dimethylamino)methyl)-5- methoxyisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-1((dimethylamino)methyl)-5methoxyisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "CN(C)C[C@@H]1N(CC2=CC(=CC=C12)OC)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "SNBIAGVLZSRPIC-QABPDZFRSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "29": {
+      "name_as_published": "(S)-3-((R)-5-((R)-1- ((dimethylamino)methyl)isoin- doline-2-carbonyl)-4-fluoro-3- methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((R)-1((dimethylamino)methyl)isoindoline-2-carbonyl)-4-fluoro-3methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "CN(C)C[C@@H]1N(CC2=CC=CC=C12)C(=O)C=1C(=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)F",
+      "inchikey": "ZPTRLSFORCEMNW-UAOJZALGSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "30": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5-chloro-4- fluoro-1-methylisoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5-chloro-4fluoro-1-methylisoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "ClC=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)F",
+      "inchikey": "VTLLMQNKYVJOBK-CRTZDJKQSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "31": {
+      "name_as_published": "(S)-3-((R)-3-methyl-5-((S)-1- methyl-5- (trifluoromethyl)isoindoline-2- carbonyl)-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-3-methyl-5-((S)-1methyl-5(trifluoromethyl)isoindoline-2carbonyl)-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "C[C@H]1N(C(C2=CC=C(C=C12)C(=O)N1[C@H](C2=CC=C(C=C2C1)C(F)(F)F)C)=O)[C@@H]1C(NC(CC1)=O)=O",
+      "inchikey": "ABSIIXLEMDZEJR-RDXCRGQUSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "32": {
+      "name_as_published": "(S)-3-((R)-5-((S)-4-fluoro-1- methyl-5- (trifluoromethyl)isoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-4-fluoro-1methyl-5(trifluoromethyl)isoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "FC1=C2CN([C@H](C2=CC=C1C(F)(F)F)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "WRNZIZBZEKGXCG-CRTZDJKQSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "33": {
+      "name_as_published": "(S)-3-((R)-5-((S)-5-chloro-4- fluoro-1-methylisoindoline-2- carbonyl)-4-methoxy-3- methyl-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-5-chloro-4fluoro-1-methylisoindoline-2carbonyl)-4-methoxy-3methyl-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "ClC=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C(=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C)OC)F",
+      "inchikey": "JTJORYIKOCFROT-IUUKEHGRSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "34": {
+      "name_as_published": "(S)-3-((R)-5-((S)-4-chloro-1- methyl-5- (trifluoromethyl)isoindoline-2- carbonyl)-3-methyl-1- oxoisoindolin-2-yl)piperidine- 2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-5-((S)-4-chloro-1methyl-5(trifluoromethyl)isoindoline-2carbonyl)-3-methyl-1oxoisoindolin-2-yl)piperidine2,6-dione",
+      "smiles": "ClC1=C2CN([C@H](C2=CC=C1C(F)(F)F)C)C(=O)C=1C=C2[C@H](N(C(C2=CC1)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "ZSAQTFQVIPYHMW-CRTZDJKQSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "35": {
+      "name_as_published": "(S)-3-((R)-4-methoxy-3- methyl-5-((S)-1-methyl-5- (trifluoromethyl)isoindoline-2- carbonyl)-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(S)-3-((R)-4-methoxy-3methyl-5-((S)-1-methyl-5(trifluoromethyl)isoindoline-2carbonyl)-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "COC1=C2[C@H](N(C(C2=CC=C1C(=O)N1[C@H](C2=CC=C(C=C2C1)C(F)(F)F)C)=O)[C@@H]1C(NC(CC1)=O)=O)C",
+      "inchikey": "CXMOCRLWHPPWBP-QUJCMNEKSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "36": {
+      "name_as_published": "3-(5-((S)-5-bromo-4-fluoro-1- methylisoindoline-2-carbonyl)- 1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "3-(5-((S)-5-bromo-4-fluoro-1methylisoindoline-2-carbonyl)1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "BrC=1C(=C2CN([C@H](C2=CC1)C)C(=O)C=1C=C2CN(C(C2=CC1)=O)C1C(NC(CC1)=O)=O)F",
+      "inchikey": "RZFAJDMHAUHZTH-FAQQKDIKSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "37": {
+      "name_as_published": "(R)-3-((R)-3-methyl-5-((S)-1- methyl-5- (trifluoromethyl)isoindoline-2- carbonyl)-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "(R)-3-((R)-3-methyl-5-((S)-1methyl-5(trifluoromethyl)isoindoline-2carbonyl)-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "C[C@H]1N(C(C2=CC=C(C=C12)C(=O)N1[C@H](C2=CC=C(C=C2C1)C(F)(F)F)C)=O)[C@H]1C(NC(CC1)=O)=O",
+      "inchikey": "ABSIIXLEMDZEJR-MRRFBWAASA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    },
+    "38": {
+      "name_as_published": "3-(5-((S)-1-methyl-5- (trifluoromethyl)isoindoline-2- carbonyl)-1-oxoisoindolin-2- yl)piperidine-2,6-dione",
+      "name_dehyphenated": "3-(5-((S)-1-methyl-5(trifluoromethyl)isoindoline-2carbonyl)-1-oxoisoindolin-2yl)piperidine-2,6-dione",
+      "smiles": "C[C@@H]1N(CC2=CC(=CC=C12)C(F)(F)F)C(=O)C=1C=C2CN(C(C2=CC1)=O)C1C(NC(CC1)=O)=O",
+      "inchikey": "HVYKNGASLFXJKS-HSLMYDHPSA-N",
+      "parse_status": "SUCCESS",
+      "verification": "opsin_on_html_table_name"
+    }
+  },
+  "activity": {
+    "1": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.29
+    },
+    "2": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.33
+    },
+    "3": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.39
+    },
+    "4": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.42
+    },
+    "5": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 0.42
+    },
+    "6": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.46
+    },
+    "7": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.48
+    },
+    "8": {
+      "isoindoline_synthesis": "I",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.61
+    },
+    "9": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 0.66
+    },
+    "10": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.71
+    },
+    "11": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.72
+    },
+    "12": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.73
+    },
+    "13": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "D",
+      "HiBiT DC50 (nM)": 0.78
+    },
+    "14": {
+      "isoindoline_synthesis": "J",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 0.95
+    },
+    "15": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 1.0
+    },
+    "16": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.0
+    },
+    "17": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 1.2
+    },
+    "18": {
+      "isoindoline_synthesis": "F",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.2
+    },
+    "19": {
+      "isoindoline_synthesis": "B",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.2
+    },
+    "20": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.3
+    },
+    "21": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "D",
+      "HiBiT DC50 (nM)": 1.3
+    },
+    "22": {
+      "isoindoline_synthesis": "E",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.3
+    },
+    "23": {
+      "isoindoline_synthesis": "G",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.3
+    },
+    "24": {
+      "isoindoline_synthesis": "B",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.3
+    },
+    "25": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.6
+    },
+    "26": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "D",
+      "HiBiT DC50 (nM)": 1.7
+    },
+    "27": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "D",
+      "HiBiT DC50 (nM)": 1.7
+    },
+    "28": {
+      "isoindoline_synthesis": "J",
+      "coupling_procedure": "C",
+      "HiBiT DC50 (nM)": 1.7
+    },
+    "29": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "D",
+      "HiBiT DC50 (nM)": 1.8
+    },
+    "30": {
+      "isoindoline_synthesis": "D",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 1.9
+    },
+    "31": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 2.2
+    },
+    "32": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 2.3
+    },
+    "33": {
+      "isoindoline_synthesis": "C",
+      "coupling_procedure": "D",
+      "HiBiT DC50 (nM)": 3.0
+    },
+    "34": {
+      "isoindoline_synthesis": "H",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 3.1
+    },
+    "35": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "B",
+      "HiBiT DC50 (nM)": 3.3
+    },
+    "36": {
+      "isoindoline_synthesis": "B",
+      "coupling_procedure": "A",
+      "HiBiT DC50 (nM)": 3.4
+    },
+    "37": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "D",
+      "HiBiT DC50 (nM)": 6.5
+    },
+    "38": {
+      "isoindoline_synthesis": "A",
+      "coupling_procedure": "A",
+      "HiBiT DC50 (nM)": 7.6
+    }
+  },
+  "counts": {
+    "n_compounds": 38,
+    "n_activity_rows": 38,
+    "n_names_parsed": 38,
+    "dc50_min_nM": 0.29,
+    "dc50_max_nM": 7.6,
+    "activity_table_is_number_sorted": false
+  },
+  "expectations": {
+    "pdc50_populated": true,
+    "pchembl_null": true,
+    "note": "PRD R10.4 / AC-4.5 — DC50 gets pdc50_value; pchembl_value must stay null."
+  }
+}

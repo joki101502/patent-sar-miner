@@ -1,0 +1,157 @@
+# Versioned assay-header lexicon (PRD R10.8, R10.9, R10.13).
+#
+# This file is data, not code: a new endpoint or a new patent's header spelling
+# is added here and requires no change to `sarmine/assay/lexicon.py`.
+#
+# `endpoints` entries describe an endpoint type and the aliases that name it in
+# a header. `headers` entries pin a verbatim header seen in a real document,
+# which wins over alias matching and carries its target and units directly.
+#
+# Fields:
+#   standard_type  the standardized (post-log-unwinding) endpoint name
+#   aliases        header substrings that name this endpoint, longest wins
+#   bao_endpoint   BioAssay Ontology id, provenance only — never used in arithmetic
+#   is_log_form    the published value is a p-scale/log value and must be unwound
+#   units          fallback units when the header itself states none
+#   target         fallback target when the header itself names none
+
+version: "1.0.0"
+
+endpoints:
+  # --- concentration-response endpoints (PRD R10.9) ---
+  - standard_type: IC50
+    aliases: ["IC50", "IC-50", "IC\u2085\u2080", "half maximal inhibitory concentration"]
+    bao_endpoint: BAO_0000190
+  - standard_type: EC50
+    aliases: ["EC50", "EC-50", "EC\u2085\u2080", "half maximal effective concentration"]
+    bao_endpoint: BAO_0000188
+  - standard_type: Ki
+    aliases: ["Ki", "K_i", "Ki app", "inhibition constant"]
+    bao_endpoint: BAO_0000192
+  - standard_type: Kd
+    aliases: ["Kd", "K_d", "KD", "dissociation constant"]
+    bao_endpoint: BAO_0000034
+  - standard_type: XC50
+    aliases: ["XC50"]
+    bao_endpoint: BAO_0002146
+  - standard_type: AC50
+    aliases: ["AC50"]
+    bao_endpoint: BAO_0000186
+  - standard_type: ED50
+    aliases: ["ED50"]
+    bao_endpoint: BAO_0000185
+  - standard_type: GI50
+    aliases: ["GI50"]
+    bao_endpoint: BAO_0002993
+
+  # --- log forms; standardized to the linear type after unwinding (PRD R10.2) ---
+  - standard_type: IC50
+    aliases: ["pIC50", "pIC-50", "logIC50", "log IC50"]
+    bao_endpoint: BAO_0000190
+    is_log_form: true
+  - standard_type: EC50
+    aliases: ["pEC50", "pEC-50", "logEC50", "log EC50"]
+    bao_endpoint: BAO_0000188
+    is_log_form: true
+  - standard_type: Ki
+    aliases: ["pKi", "logKi", "log Ki"]
+    bao_endpoint: BAO_0000192
+    is_log_form: true
+  - standard_type: Kd
+    aliases: ["pKd", "logKd", "log Kd"]
+    bao_endpoint: BAO_0000034
+    is_log_form: true
+
+  # --- targeted protein degradation (PRD R10.4) ---
+  # ChEMBL files DC50/Dmax/Degradation under the generic BAO_0000179 endpoint.
+  - standard_type: DC50
+    aliases: ["DC50", "DC-50", "degradation concentration 50"]
+    bao_endpoint: BAO_0000179
+  - standard_type: Dmax
+    aliases: ["Dmax", "D max", "maximum degradation"]
+    bao_endpoint: BAO_0000179
+    units: "%"
+  - standard_type: DC50
+    aliases: ["pDC50", "logDC50"]
+    bao_endpoint: BAO_0000179
+    is_log_form: true
+
+  # --- fixed-dose percent effects (PRD R10.9) ---
+  - standard_type: Inhibition
+    aliases:
+      - "% inhibition"
+      - "percent inhibition"
+      - "inhibition (%)"
+      - "% inhibition @ fixed dose"
+    bao_endpoint: BAO_0000201
+    units: "%"
+  - standard_type: Induction
+    aliases: ["% induction", "induction (%)", "induction"]
+    bao_endpoint: BAO_0000201
+    units: "%"
+  - standard_type: Degradation
+    aliases: ["% degradation", "degradation (%)"]
+    bao_endpoint: BAO_0000179
+    units: "%"
+  - standard_type: Viability
+    aliases: ["% viable cells", "% viability", "cell viability (%)"]
+    bao_endpoint: BAO_0002993
+    units: "%"
+
+  # --- non-endpoint columns: recognized so the pipeline routes rather than guesses ---
+  - standard_type: CompoundNumber
+    aliases:
+      - "compound no."
+      - "compound no"
+      - "compound number"
+      - "cmpd. no."
+      - "cmpd no."
+      - "cmpd. no"
+      - "cmpd no"
+      - "example no."
+      - "example number"
+      - "entry"
+  - standard_type: CompoundStructure
+    aliases: ["compound structure", "structure", "chemical structure"]
+  - standard_type: CompoundName
+    aliases: ["compound name", "iupac name", "chemical name", "name"]
+  - standard_type: ProcedureReference
+    aliases:
+      - "isoindoline synthesis"
+      - "coupling procedure"
+      - "synthesis"
+      - "synthetic procedure"
+      - "procedure"
+      - "general procedure"
+      - "method"
+
+# Verbatim headers from the two reference patents (PRD §3.4, §3.8).
+headers:
+  # WO2024097932A1 — Table 2, page 186
+  - header: "Compound No."
+    standard_type: CompoundNumber
+  - header: "HbF Induction (%)"
+    standard_type: Induction
+    target: HbF
+    units: "%"
+  - header: "WIZ EC50 (uM)"
+    standard_type: EC50
+    target: WIZ
+    units: uM
+  - header: "ZBTB7A EC50 (uM)"
+    standard_type: EC50
+    target: ZBTB7A
+    units: uM
+
+  # US20250368620A1 — TABLE 2, header split across four <tr> rows (EC-27)
+  - header: "Cmpd. No."
+    standard_type: CompoundNumber
+  - header: "Compound Structure"
+    standard_type: CompoundStructure
+  - header: "Isoindoline synthesis"
+    standard_type: ProcedureReference
+  - header: "Coupling procedure"
+    standard_type: ProcedureReference
+  - header: "HiBiT DC50 (nM)"
+    standard_type: DC50
+    units: nM
