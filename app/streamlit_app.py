@@ -142,7 +142,7 @@ def screen_ingest() -> None:
         target = st.text_input("Target assay", value=cfg.target_assay)
         off_target = st.text_input("Off-target assay", value=cfg.off_target_assay or "")
         st.caption(
-            "These two set the sign of the selectivity score (PRD R12.4). "
+            "These two set the sign of the selectivity score."
             "Getting them backwards ranks the wrong compounds first."
         )
         force_pdf = st.checkbox(

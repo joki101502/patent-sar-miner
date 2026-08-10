@@ -78,6 +78,8 @@ Two honest caveats:
 
 ## Install
 
+> Step-by-step local setup: [`SETUP.md`](SETUP.md)
+
 Python **3.11 exactly**.
 
 System binaries:
